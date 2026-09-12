@@ -193,8 +193,9 @@ function App() {
         <ResultsPanel results={results} />
 
         <p className="text-center text-xs text-slate-400 dark:text-slate-600">
-          All figures are planning estimates in EUR — verify visa fees, taxes, and cost of living for your specific
-          situation before making decisions. Your data is stored only in this browser.
+          Country figures are research-sourced estimates in EUR (see "Sources & last verified" under each country
+          above) — not a live feed. Verify visa fees, taxes, and cost of living for your specific situation before
+          making decisions. Your data is stored only in this browser.
         </p>
       </main>
     </div>

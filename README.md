@@ -13,9 +13,15 @@ countries and city tiers to see how much financial room you'd have.
   buffer).
 - **Reference cost-of-living data** for 12 European countries (Germany,
   Netherlands, Portugal, Spain, France, Italy, Ireland, Austria, Switzerland,
-  Sweden, Poland, Czech Republic), each with three city tiers (capital,
-  major city, smaller city/town). These are editable ballpark estimates —
-  verify real figures before relying on them.
+  Sweden, Poland, Czech Republic), each with three named-city tiers (capital,
+  major city, smaller city/town). Every country lists the sources used
+  (Numbeo, OECD Taxing Wages, government visa/tax pages, etc.) and an
+  "as of" note under "Sources & last verified" in the country picker. These
+  numbers were gathered via web research, not a live data feed — this
+  environment's direct fetch of primary sources was blocked, so figures were
+  triangulated from search-result snippets and secondary mirrors rather than
+  read straight off the source page. Treat them as directional and check the
+  linked sources before relying on them; all are still editable.
 - **Computes financial room** per selected country: estimated monthly cost
   (rent, groceries, utilities, transport, health insurance, carried-over
   costs, safety buffer), monthly surplus/deficit, one-time move cost, savings
