@@ -1,8 +1,10 @@
 import type { CountryProfile } from '../types';
 
-// All figures are EUR/month ballpark estimates for planning purposes only —
-// actual costs vary by city, lifestyle, and visa category. Meant as a
-// reasonable starting point that the user should verify and adjust.
+// All figures are EUR/month estimates for planning purposes only —
+// actual costs vary by city, lifestyle, and visa category. Each country
+// carries its own `sources`/`asOf` citing where its numbers came from;
+// entries still marked "Not yet verified" are rough estimates pending a
+// sourced update.
 export const COUNTRIES: CountryProfile[] = [
   {
     id: 'de',
@@ -14,6 +16,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 35,
     vatPct: 19,
     notes: 'Public health insurance ~14.6% of salary if employed; figure above assumes private/voluntary estimate for planning.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Berlin / Munich', rent1Bed: 1350, rent3Bed: 2400, groceriesPerAdult: 320, utilities: 280, transportPerAdult: 80 },
       major: { label: 'Hamburg / Cologne', rent1Bed: 1100, rent3Bed: 1950, groceriesPerAdult: 300, utilities: 260, transportPerAdult: 75 },
@@ -30,6 +34,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 37,
     vatPct: 21,
     notes: 'Mandatory basic health insurance premium ~€130-150/adult/month.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Amsterdam', rent1Bed: 1700, rent3Bed: 2900, groceriesPerAdult: 330, utilities: 250, transportPerAdult: 90 },
       major: { label: 'Rotterdam / Utrecht', rent1Bed: 1350, rent3Bed: 2300, groceriesPerAdult: 310, utilities: 230, transportPerAdult: 85 },
@@ -46,6 +52,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 28,
     vatPct: 23,
     notes: 'Popular for D7/digital nomad visas; healthcare cost assumes private top-up alongside public SNS.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Lisbon', rent1Bed: 1250, rent3Bed: 2100, groceriesPerAdult: 260, utilities: 160, transportPerAdult: 45 },
       major: { label: 'Porto', rent1Bed: 950, rent3Bed: 1600, groceriesPerAdult: 240, utilities: 150, transportPerAdult: 40 },
@@ -62,6 +70,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 30,
     vatPct: 21,
     notes: 'Non-lucrative and digital nomad visas both require proof of private health insurance.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Madrid / Barcelona', rent1Bed: 1250, rent3Bed: 2100, groceriesPerAdult: 270, utilities: 170, transportPerAdult: 55 },
       major: { label: 'Valencia / Seville', rent1Bed: 900, rent3Bed: 1500, groceriesPerAdult: 250, utilities: 155, transportPerAdult: 45 },
@@ -78,6 +88,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 33,
     vatPct: 20,
     notes: 'Public system (PUMA/CSS) covers most residents; figure assumes a mutuelle top-up.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Paris', rent1Bed: 1500, rent3Bed: 2700, groceriesPerAdult: 320, utilities: 220, transportPerAdult: 85 },
       major: { label: 'Lyon / Bordeaux', rent1Bed: 1050, rent3Bed: 1850, groceriesPerAdult: 290, utilities: 200, transportPerAdult: 65 },
@@ -94,6 +106,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 34,
     vatPct: 22,
     notes: 'Elective residency / digital nomad visas typically require private health cover initially.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Rome / Milan', rent1Bed: 1250, rent3Bed: 2200, groceriesPerAdult: 290, utilities: 210, transportPerAdult: 55 },
       major: { label: 'Florence / Bologna', rent1Bed: 950, rent3Bed: 1650, groceriesPerAdult: 270, utilities: 195, transportPerAdult: 45 },
@@ -110,6 +124,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 38,
     vatPct: 23,
     notes: 'High rents concentrated in Dublin; most expats carry private health insurance.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Dublin', rent1Bed: 2000, rent3Bed: 3200, groceriesPerAdult: 340, utilities: 250, transportPerAdult: 90 },
       major: { label: 'Cork / Galway', rent1Bed: 1500, rent3Bed: 2400, groceriesPerAdult: 310, utilities: 230, transportPerAdult: 70 },
@@ -126,6 +142,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 36,
     vatPct: 20,
     notes: 'Red-White-Red Card is the common skilled-worker route.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Vienna', rent1Bed: 1150, rent3Bed: 2050, groceriesPerAdult: 310, utilities: 240, transportPerAdult: 55 },
       major: { label: 'Graz / Salzburg', rent1Bed: 950, rent3Bed: 1700, groceriesPerAdult: 290, utilities: 220, transportPerAdult: 50 },
@@ -142,6 +160,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 22,
     vatPct: 8,
     notes: 'Not EU but a common target; mandatory private health insurance is a major fixed cost. Lower income tax, much higher living costs.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Zurich / Geneva', rent1Bed: 2100, rent3Bed: 3600, groceriesPerAdult: 420, utilities: 220, transportPerAdult: 90 },
       major: { label: 'Basel / Bern', rent1Bed: 1650, rent3Bed: 2800, groceriesPerAdult: 390, utilities: 200, transportPerAdult: 80 },
@@ -158,6 +178,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 32,
     vatPct: 25,
     notes: 'Public healthcare funded via taxes keeps direct insurance cost low.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Stockholm', rent1Bed: 1350, rent3Bed: 2300, groceriesPerAdult: 300, utilities: 190, transportPerAdult: 80 },
       major: { label: 'Gothenburg / Malmö', rent1Bed: 1050, rent3Bed: 1800, groceriesPerAdult: 280, utilities: 175, transportPerAdult: 65 },
@@ -174,6 +196,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 25,
     vatPct: 23,
     notes: 'One of the most affordable EU options with a growing tech/remote-work scene.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Warsaw', rent1Bed: 850, rent3Bed: 1450, groceriesPerAdult: 220, utilities: 170, transportPerAdult: 30 },
       major: { label: 'Krakow / Wroclaw', rent1Bed: 700, rent3Bed: 1200, groceriesPerAdult: 200, utilities: 155, transportPerAdult: 25 },
@@ -190,6 +214,8 @@ export const COUNTRIES: CountryProfile[] = [
     incomeTaxEstimatePct: 23,
     vatPct: 21,
     notes: 'Prague draws most relocators; other cities are notably cheaper.',
+    sources: [],
+    asOf: 'Not yet verified — rough placeholder estimate.',
     tiers: {
       capital: { label: 'Prague', rent1Bed: 1000, rent3Bed: 1700, groceriesPerAdult: 240, utilities: 190, transportPerAdult: 30 },
       major: { label: 'Brno / Ostrava', rent1Bed: 750, rent3Bed: 1300, groceriesPerAdult: 220, utilities: 170, transportPerAdult: 25 },

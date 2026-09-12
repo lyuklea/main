@@ -74,6 +74,26 @@ export function CountryPicker({ selected, onChange }: CountryPickerProps) {
                       {country.tiers[tier].label} — {CITY_TIER_LABELS[tier]}
                     </label>
                   ))}
+                  {country.sources.length > 0 && (
+                    <details className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+                      <summary className="cursor-pointer select-none">Sources & last verified</summary>
+                      <p className="mt-1">{country.asOf}</p>
+                      <ul className="mt-1 list-inside list-disc space-y-0.5">
+                        {country.sources.map((s) => (
+                          <li key={s.url}>
+                            <a
+                              href={s.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-indigo-600 underline hover:text-indigo-500 dark:text-indigo-400"
+                            >
+                              {s.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  )}
                 </div>
               )}
             </div>

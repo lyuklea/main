@@ -38,6 +38,11 @@ export interface CostOfLivingTier {
   transportPerAdult: number;
 }
 
+export interface Source {
+  label: string;
+  url: string;
+}
+
 export interface CountryProfile {
   id: string;
   name: string;
@@ -49,6 +54,8 @@ export interface CountryProfile {
   vatPct: number;
   notes: string;
   tiers: Record<CityTierId, CostOfLivingTier>;
+  sources: Source[];
+  asOf: string;
 }
 
 export interface SelectedCountry {
