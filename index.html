@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>מאמן כוח אישי</title>
+  <meta name="description" content="אפליקציית אימוני כוח אישית - מתחילה עד כוח" />
+  <meta name="theme-color" content="#14532d" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%AA%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1 class="app-title">מאמן כוח אישי</h1>
+    <button id="settings-btn" class="icon-btn" aria-label="הגדרות" title="הגדרות">⚙️</button>
+  </header>
+
+  <main id="app" aria-live="polite"></main>
+
+  <nav class="bottom-nav" id="bottom-nav">
+    <a href="#/dashboard" data-route="dashboard" class="nav-item">
+      <span class="nav-icon" aria-hidden="true">🏠</span>
+      <span class="nav-label">בית</span>
+    </a>
+    <a href="#/session" data-route="session" class="nav-item">
+      <span class="nav-icon" aria-hidden="true">🏋️</span>
+      <span class="nav-label">אימון</span>
+    </a>
+    <a href="#/exercises" data-route="exercises" class="nav-item">
+      <span class="nav-icon" aria-hidden="true">📋</span>
+      <span class="nav-label">תרגילים</span>
+    </a>
+    <a href="#/progress" data-route="progress" class="nav-item">
+      <span class="nav-icon" aria-hidden="true">📈</span>
+      <span class="nav-label">התקדמות</span>
+    </a>
+  </nav>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
